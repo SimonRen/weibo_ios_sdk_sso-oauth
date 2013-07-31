@@ -50,7 +50,7 @@
 
 // Log in using OAuth Web authorization.
 // If succeed, sinaweiboDidLogIn will be called.
-- (void)logIn;
+- (void)logInWithViewController:(UIViewController *)controller;
 
 // Log out.
 // If succeed, sinaweiboDidLogOut will be called.

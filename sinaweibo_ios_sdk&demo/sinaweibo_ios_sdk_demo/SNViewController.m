@@ -157,7 +157,7 @@
     [statuses release], statuses = nil;
     
     SinaWeibo *sinaweibo = [self sinaweibo];
-    [sinaweibo logIn];
+    [sinaweibo logInWithViewController:self];
 }
 
 - (void)logoutButtonPressed

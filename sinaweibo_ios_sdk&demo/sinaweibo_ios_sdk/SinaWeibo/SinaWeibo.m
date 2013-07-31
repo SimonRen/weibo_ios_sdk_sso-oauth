@@ -277,7 +277,7 @@
 /**
  * @description 登录入口，当初始化SinaWeibo对象完成后直接调用此方法完成登录
  */
-- (void)logIn
+- (void)logInWithViewController:(UIViewController *)controller
 {
     if ([self isAuthValid])
     {
@@ -334,7 +334,7 @@
             SinaWeiboAuthorizeView *authorizeView = \
             [[SinaWeiboAuthorizeView alloc] initWithAuthParams:params
                                                       delegate:self];
-            [authorizeView show];
+            [authorizeView showWithViewController:controller];
             [authorizeView release];
         }
     }

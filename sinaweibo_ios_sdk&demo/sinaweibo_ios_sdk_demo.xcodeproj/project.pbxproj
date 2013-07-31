@@ -21,7 +21,6 @@
 		18F78D9E1545A631008467F4 /* button_background_disabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D9A1545A631008467F4 /* button_background_disabled@2x.png */; };
 		18F78DA01545C6A5008467F4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18F78D9F1545C6A5008467F4 /* logo.png */; };
 		BA59D08F16818B0100C76B64 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D08E16818B0100C76B64 /* JSONKit.m */; };
-		BA59D09816818B1700C76B64 /* SinaWeibo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BA59D09016818B1700C76B64 /* SinaWeibo.bundle */; };
 		BA59D09916818B1700C76B64 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09216818B1700C76B64 /* SinaWeibo.m */; };
 		BA59D09A16818B1700C76B64 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09416818B1700C76B64 /* SinaWeiboAuthorizeView.m */; };
 		BA59D09B16818B1700C76B64 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BA59D09716818B1700C76B64 /* SinaWeiboRequest.m */; };
@@ -48,7 +47,6 @@
 		18F78D9F1545C6A5008467F4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		BA59D08D16818B0100C76B64 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONKit.h; path = sinaweibo_ios_sdk/JSONKit/JSONKit.h; sourceTree = "<group>"; };
 		BA59D08E16818B0100C76B64 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONKit.m; path = sinaweibo_ios_sdk/JSONKit/JSONKit.m; sourceTree = "<group>"; };
-		BA59D09016818B1700C76B64 /* SinaWeibo.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = SinaWeibo.bundle; path = sinaweibo_ios_sdk/SinaWeibo/SinaWeibo.bundle; sourceTree = "<group>"; };
 		BA59D09116818B1700C76B64 /* SinaWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeibo.h; path = sinaweibo_ios_sdk/SinaWeibo/SinaWeibo.h; sourceTree = "<group>"; };
 		BA59D09216818B1700C76B64 /* SinaWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SinaWeibo.m; path = sinaweibo_ios_sdk/SinaWeibo/SinaWeibo.m; sourceTree = "<group>"; };
 		BA59D09316818B1700C76B64 /* SinaWeiboAuthorizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SinaWeiboAuthorizeView.h; path = sinaweibo_ios_sdk/SinaWeibo/SinaWeiboAuthorizeView.h; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 		BA59D08B16818A7200C76B64 /* SinaWeibo */ = {
 			isa = PBXGroup;
 			children = (
-				BA59D09016818B1700C76B64 /* SinaWeibo.bundle */,
 				BA59D09116818B1700C76B64 /* SinaWeibo.h */,
 				BA59D09216818B1700C76B64 /* SinaWeibo.m */,
 				BA59D09316818B1700C76B64 /* SinaWeiboAuthorizeView.h */,
@@ -229,7 +226,6 @@
 				18F78D9E1545A631008467F4 /* button_background_disabled@2x.png in Resources */,
 				18F78DA01545C6A5008467F4 /* logo.png in Resources */,
 				1811BD1E154B0FFF008ECCCE /* logo@2x.png in Resources */,
-				BA59D09816818B1700C76B64 /* SinaWeibo.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +265,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -293,6 +293,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;

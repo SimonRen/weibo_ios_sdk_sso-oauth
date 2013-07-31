@@ -13,11 +13,9 @@
 @interface SinaWeiboAuthorizeView : UIView <UIWebViewDelegate>
 {
     UIWebView *webView;
-    UIButton *closeButton;
-    UIView *modalBackgroundView;
     UIActivityIndicatorView *indicatorView;
-    UIInterfaceOrientation previousOrientation;
-    
+    UIViewController *tempController;
+	
     id<SinaWeiboAuthorizeViewDelegate> delegate;
     
     NSString *appRedirectURI;
@@ -29,7 +27,7 @@
 - (id)initWithAuthParams:(NSDictionary *)params
                 delegate:(id<SinaWeiboAuthorizeViewDelegate>)delegate;
 
-- (void)show;
+- (void)showWithViewController:(UIViewController *)controller;
 - (void)hide;
 
 @end
